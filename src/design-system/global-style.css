@@ -11,12 +11,39 @@
       Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   }
 
-  h1 {
+  body {
+    background-color: theme("colors.background");
+    line-height: theme("lineHeight.none");
     color: theme("colors.primary");
+    font-size: theme("fontSize.l");
+  }
+
+  h1 {
     font-size: theme("fontSize.xxl");
     font-weight: theme("fontWeight.medium");
     font-family: theme("fontFamily.robotoMono");
     line-height: theme("lineHeight.none");
+  }
+
+  h2 {
+    font-size: theme("fontSize.xl");
+    font-weight: theme("fontWeight.medium");
+    font-family: theme("fontFamily.robotoMono");
+    line-height: theme("lineHeight.none");
+  }
+
+  h3 {
+    font-size: theme("fontSize.l");
+    font-weight: theme("fontWeight.medium");
+    font-family: theme("fontFamily.robotoMono");
+    line-height: theme("lineHeight.none");
+  }
+
+  p {
+    color: theme("colors.lightGrey");
+    font-size: theme("fontSize.l");
+    line-height: theme("lineHeight.normal");
+    font-weight: theme("fontWeight.light");
   }
 }
 
