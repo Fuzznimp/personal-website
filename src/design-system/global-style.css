@@ -16,6 +16,7 @@
     line-height: theme("lineHeight.none");
     color: theme("colors.primary");
     font-size: theme("fontSize.l");
+    font-family: theme("fontFamily.roboto");
   }
 
   h1 {
@@ -40,7 +41,7 @@
   }
 
   p {
-    color: theme("colors.lightGrey");
+    color: theme("colors.lightGray");
     font-size: theme("fontSize.l");
     line-height: theme("lineHeight.normal");
     font-weight: theme("fontWeight.light");

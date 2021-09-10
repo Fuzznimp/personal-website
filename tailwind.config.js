@@ -3,14 +3,14 @@ const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   purge: ["./src/pages/**/*.tsx", "./src/components/**/*.tsx"],
-  darkMode: false,
+  darkMode: "media",
   theme: {
     colors: {
-      primary: "#101010",
-      secondary: "#666",
-      background: "#eaeaea",
-      contrastCopy: "#EEEEEE",
-      lightGrey: "#666",
+      primary: "hsl(0, 0%, 6%)",
+      secondary: "hsl(0, 0%, 90%)",
+      background: "hsl(0, 0%, 92%)",
+      contrastCopy: "hsl(0, 0%, 93%)",
+      lightGray: "hsl(0, 0%, 40%)",
     },
     fontSize: {
       xs: "1rem",

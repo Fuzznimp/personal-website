@@ -7,7 +7,7 @@ import { TwitterIcon } from "./Icons/twitter";
 
 export const Header: React.FC = () => {
   return (
-    <div className="h-96 md:h-screen p-12 bg-contrastCopy flex flex-col justify-between border-r-0">
+    <div className="h-96 md:h-screen p-12 bg-contrastCopy flex flex-col justify-between border-r border-secondary">
       <section>
         <h1 className="mb-0 md:my-8 text-center md:text-left vertical-rl md:transform md:rotate-180">
           Anthony Montaigne

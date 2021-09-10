@@ -1,14 +1,12 @@
 import type { NextPage } from "next";
 import React from "react";
 
+import { ProjectList } from "@src/components/project-list";
+
 const Home: NextPage = () => {
   return (
     <React.Fragment>
-      <p>
-        Hi there! My name is Anthony Montaigne. I&apos;m web developer from
-        France.
-      </p>
-      <p>🚧 WIP 🚧</p>
+      <ProjectList />
     </React.Fragment>
   );
 };
