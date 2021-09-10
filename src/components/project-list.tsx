@@ -30,7 +30,7 @@ const PROJECTS_DATA = [
     githubURL: "https://github.com/fewlinesco/connect-js/tree/main/management",
   },
   {
-    id: "FWL SDK (not open source yet)",
+    id: "FWL SDK",
     href: "",
     description:
       "FWL (pronounced 'fuel') are Fewlines Web Libraries. They are an ensemble of packages that allow us to build backend services in Typescript.",
@@ -72,7 +72,7 @@ const ProjectListItem: React.FC<{
 
   return (
     <li
-      className="py-4 flex items-center"
+      className="md:py-4 flex items-center"
       key="id"
       onMouseOver={() => setIsShown(true)}
       onMouseLeave={() => setIsShown(false)}

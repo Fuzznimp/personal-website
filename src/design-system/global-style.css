@@ -49,4 +49,18 @@
 }
 
 @tailwind components;
+
 @tailwind utilities;
+@layer utilities {
+  @variants responsive {
+    .horizontal-tb {
+      writing-mode: horizontal-tb;
+    }
+    .vertical-rl {
+      writing-mode: vertical-rl;
+    }
+    .vertical-lr {
+      writing-mode: vertical-lr;
+    }
+  }
+}

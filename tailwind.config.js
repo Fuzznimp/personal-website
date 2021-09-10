@@ -1,6 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const plugin = require("tailwindcss/plugin");
-
 module.exports = {
   purge: ["./src/pages/**/*.tsx", "./src/components/**/*.tsx"],
   darkMode: "media",
@@ -31,19 +28,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [
-    plugin(function ({ addUtilities }) {
-      addUtilities({
-        ".horizontal-tb": {
-          writingMode: "horizontal-tb",
-        },
-        ".vertical-rl": {
-          writingMode: "vertical-rl",
-        },
-        ".vertical-lr": {
-          writingMode: "vertical-lr",
-        },
-      });
-    }),
-  ],
+  plugins: [],
 };
