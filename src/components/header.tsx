@@ -13,20 +13,34 @@ export const Header: React.FC = () => {
           Anthony Montaigne
         </h1>
         <div className="flex md:block justify-evenly md:mt-40">
-          <a href="https://github.com/Fuzznimp" className="block my-12 w-10">
+          <a
+            href="https://github.com/Fuzznimp"
+            target="_blank"
+            rel="noreferrer"
+            className="block my-12 w-10"
+          >
             <GitHubIcon />
           </a>
-          <a href="mailto:anthony@montaigne.dev" className="block my-12 w-10">
+          <a
+            href="mailto:anthony@montaigne.dev"
+            target="_blank"
+            rel="noreferrer"
+            className="block my-12 w-10"
+          >
             <MailIcon />
           </a>
           <a
             href="https://twitter.com/anthomontaigne"
+            target="_blank"
+            rel="noreferrer"
             className="block my-12 w-10"
           >
             <TwitterIcon />
           </a>
           <a
             href="https://www.linkedin.com/in/anthony-montaigne-abb210176/"
+            target="_blank"
+            rel="noreferrer"
             className="block my-12 w-10"
           >
             <LinkedinIcon />
