@@ -1,10 +1,10 @@
 import Link from "next/link";
 import React from "react";
 
-import { LinkedinIcon } from "./Icons/Linkedin";
-import { GitHubIcon } from "./Icons/github";
-import { MailIcon } from "./Icons/mail";
-import { TwitterIcon } from "./Icons/twitter";
+import { GitHubIcon } from "./icons/github";
+import { LinkedinIcon } from "./icons/linkedin";
+import { MailIcon } from "./icons/mail";
+import { TwitterIcon } from "./icons/twitter";
 
 export const Header: React.FC = () => {
   return (
