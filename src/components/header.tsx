@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 import { LinkedinIcon } from "./Icons/Linkedin";
@@ -9,42 +10,34 @@ export const Header: React.FC = () => {
   return (
     <div className="md:h-screen p-12 bg-contrastCopy flex flex-col justify-between border-r border-secondary">
       <section>
-        <h1 className="mb-0 md:my-8 text-center md:text-left lg:vertical-rl md:transform md:rotate-180">
-          Anthony Montaigne
-        </h1>
+        <Link href="#">
+          <a>
+            <h1 className="mb-0 md:my-8 text-center md:text-left lg:vertical-rl md:transform md:rotate-180">
+              Anthony Montaigne
+            </h1>
+          </a>
+        </Link>
         <div className="flex md:block justify-evenly md:mt-40">
-          <a
-            href="https://github.com/Fuzznimp"
-            target="_blank"
-            rel="noreferrer"
-            className="block my-12 w-10"
-          >
-            <GitHubIcon />
-          </a>
-          <a
-            href="mailto:anthony@montaigne.dev"
-            target="_blank"
-            rel="noreferrer"
-            className="block my-12 w-10"
-          >
-            <MailIcon />
-          </a>
-          <a
-            href="https://twitter.com/anthomontaigne"
-            target="_blank"
-            rel="noreferrer"
-            className="block my-12 w-10"
-          >
-            <TwitterIcon />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/anthony-montaigne-abb210176/"
-            target="_blank"
-            rel="noreferrer"
-            className="block my-12 w-10"
-          >
-            <LinkedinIcon />
-          </a>
+          <Link href="https://github.com/Fuzznimp">
+            <a target="_blank" rel="noreferrer" className="block my-12 w-10">
+              <GitHubIcon />
+            </a>
+          </Link>
+          <Link href="mailto:anthony@montaigne.dev">
+            <a target="_blank" rel="noreferrer" className="block my-12 w-10">
+              <MailIcon />
+            </a>
+          </Link>
+          <Link href="https://twitter.com/anthomontaigne">
+            <a target="_blank" rel="noreferrer" className="block my-12 w-10">
+              <TwitterIcon />
+            </a>
+          </Link>
+          <Link href="https://www.linkedin.com/in/anthony-montaigne-abb210176/">
+            <a target="_blank" rel="noreferrer" className="block my-12 w-10">
+              <LinkedinIcon />
+            </a>
+          </Link>
         </div>
       </section>
     </div>
