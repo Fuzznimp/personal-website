@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 import { GitHubIcon } from "./icons/github";
@@ -7,6 +8,8 @@ import { MailIcon } from "./icons/mail";
 import { TwitterIcon } from "./icons/twitter";
 
 export const Header: React.FC = () => {
+  const router = useRouter();
+
   return (
     <div className="md:h-screen p-12 bg-contrastCopy flex flex-col justify-between border-r border-secondary">
       <section>
@@ -40,6 +43,20 @@ export const Header: React.FC = () => {
           </Link>
         </div>
       </section>
+      <div className="flex lg:flex-col justify-around">
+        <button className="md:mb-8 md:text-left">
+          {router.locale === "en" ? "🕶️" : "💡"}
+        </button>
+        {router.locale === "en" ? (
+          <Link href="/fr" locale="fr">
+            <a>🇬🇧</a>
+          </Link>
+        ) : (
+          <Link href="/" locale="en">
+            <a>🇫🇷</a>
+          </Link>
+        )}
+      </div>
     </div>
   );
 };
