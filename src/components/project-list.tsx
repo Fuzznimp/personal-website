@@ -65,25 +65,27 @@ const ProjectListItem: React.FC<{
   const [isShown, setIsShown] = React.useState<boolean>(false);
 
   return (
-    <li
-      className="md:py-4 flex items-center"
-      key="id"
-      onMouseOver={() => setIsShown(true)}
-      onMouseLeave={() => setIsShown(false)}
-    >
-      <p className="mr-12 font-robotoMono font-medium text-lightGray leading-loose">{`00${index}`}</p>
-      <a
-        href={href}
-        target="_blank"
-        rel="noreferrer"
-        className="font-robotoMono font-medium text-xl leading-loose"
+    <>
+      <li
+        className="md:py-4 flex items-center"
+        key="id"
+        onMouseOver={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}
       >
-        {children}
-      </a>
+        <p className="mr-12 font-robotoMono font-medium text-lightGray leading-loose">{`00${index}`}</p>
+        <a
+          href={href}
+          target="_blank"
+          rel="noreferrer"
+          className="font-robotoMono font-medium text-xl leading-loose"
+        >
+          {children}
+        </a>
+      </li>
       {isShown ? (
-        <p className="absolute -top-4 left-1/3 mb-4 p-10">{description}</p>
+        <p className="lg:absolute -top-4 left-1/3 mb-4 p-10">{description}</p>
       ) : null}
-    </li>
+    </>
   );
 };
 
